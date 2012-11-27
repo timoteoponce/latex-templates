@@ -1,0 +1,15 @@
+Template for a thesis do - UAGRM
+--------------------------------
+
+- UAGRM logo
+- Babel package for Spanish
+- Iamges and graphics support
+- URLs with links 
+- Glossary package
+- Margins predefined
+- Table of contents: titles, tables, images
+- one half space
+- source code highlighting 
+- Bibliography with natbib
+- annexes
+- project separated into files

@@ -1,0 +1,67 @@
+\documentclass[letterpaper,12pt]{report}
+
+%\pagestyle{headings}
+
+%additional packages
+\usepackage[spanish]{babel}
+\usepackage[dvips]{epsfig}     % To include PostScript
+\usepackage{xcolor,graphicx}
+\usepackage{url}
+\usepackage[pdftex]{hyperref}
+%bib
+\usepackage[comma,square,authoryear,sort&compress]{natbib}
+\bibpunct[:]{(}{)}{:}{a}{,}{~}
+% bib toc
+\usepackage{tocbibind}
+% margins
+\usepackage[left=4cm,top=4cm,right=2.5cm,bottom=2.5cm]{geometry} 
+% glossaries
+\usepackage[toc]{glossary}
+\makeglossary
+% line spacing
+\usepackage{setspace}
+\onehalfspacing
+% pdf
+\usepackage{pdfpages}
+%
+% ------------- SCALA highlight -------------
+%code highlight
+\newenvironment{mylisting}
+{\begin{list}{}{\setlength{\leftmargin}{1em}}\item\scriptsize\bfseries}
+{\end{list}}
+% -------------------------------------------
+
+%custom commands
+\hypersetup{urlcolor=black, citecolor=black, linkcolor=black, colorlinks=true }
+\graphicspath{{./img/}}
+
+% title
+\author{Timoteo Ponce}
+\title{Plataforma de desarrollo en 
+base a la programaci\'on objeto-funcional y la arquitectura DCI}
+
+\begin{document}
+
+\include{front_page_single}
+\tableofcontents
+\newpage
+\listoffigures
+\listoftables
+\newpage
+%generate the title
+%\maketitle
+%  chapters
+\include{glossary}
+\include{chap1}
+\include{chap2}
+\include{chap3}
+%glossary
+\printglossary
+%\addcontentsline{toc}{chapter}{Glosario de t\'erminos}
+% bibliography
+\bibliographystyle{plainnat}
+\bibliography{biblio}
+% annexes
+\include{annexes}
+
+\end{document}
